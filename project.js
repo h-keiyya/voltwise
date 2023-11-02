@@ -18,17 +18,27 @@ document.addEventListener("DOMContentLoaded", () => {
     "5kva-kitusuru": {
       title: "5Kva Backup System in Kitusuru",
       description:
-        "We installed a backup system for a client in Kitusuru blah blah blah",
-      technologies: 'Two 65" TV, 1 Fridge, Laptop',
-      image: "images/construction.png",
+        "Recently Installed this 8kw off-grid system in Nakuru. The system comprised; 12 pieces 450w jinko solar panels, 8 pieces 200ah felicity solar batteries, 1 unit 8Kw must hybrid inverter, Solar mounting structure,battery rack, Wiring &control accessories",
+      technologies:
+        'A 65" TV set, CCTV System, LIghting (indoor & outdoors), Dispenser, Fridge (24 hours), Microwave',
+      image: "images/8Kw-nakuru.jpeg",
     },
-    "heater-kayahwe": {
-      title: "300L Solar Water Heater Project in Kayahwe Villas Nairobi",
-      description: "Description for Solar Water Heater Project...",
-      technologies: "Solar Thermal Panels, Water Tank, Heat Exchanger",
-      image: "path/to/heater-kayahwe-image.jpg",
+    "solar-abc": {
+      title: "5KvA Office Backup System at the ABC Place",
+      description:
+        "We recently installed this 5KvA Backup System at an office in the ABC Place Westlands. The client was in distress after being frustrated by grid power which kept going off frequently. The System Comprised; 2 units 48V 4.4Kwh LiFeP04 felicity lithium batteries, 1 unit 48V 5KvA felicity hybrid inverter, Wiring & control accessories",
+      technologies:
+        "6 desktop computers, 4 Laptops, A photocopy machine, A water dispenser machine, A double door fridge, Lighting",
+      image: "images/5kva-abc.jpeg",
     },
-    // Add more project IDs and data as needed
+    "5kva-thika": {
+      title: "5KW Solar back-up system in Thika",
+      description:
+        "This 5KvA solar back-up system was installed in Thika Greens. It is a 5kw solar energy back-up system integrated to the grid. The system comprises; 6 pieces 550w Jinko mono solar panels, 2 units 48v 5kwh Lithium batteries, 1 unit 5KvA felicity hybrid inverter, Wiring & accessories",
+      technologies:
+        '65" Tv set,Lighting (indoors & outdoors),2 fridges,microwave,small water pump',
+      image: "images/5kw-thika.jpeg",
+    },
   };
 
   // Load content based on the project ID
