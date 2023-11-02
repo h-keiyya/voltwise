@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <title>Our Projects</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-gray-400/40">
+      <div class="flex items-center justify-between container mx-auto p-6">
+        <!-- Logo -->
+        <a href="index.html" class="flex flex-row-reverse">
+          <p class="ml-2 my-auto uppercase font-bold">
+            Voltwise <br />
+            Technologies
+          </p>
+          <img class="w-[70px] rounded-xl" src="images/logo.jpg" alt="" />
+        </a>
+        <ul class="hidden md:flex space-x-5">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden z-50">
+        <ul
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-3 space-y-6 font-bold bg-white text-black sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="project-content">
+      <div
+        class="project-details container mx-auto p-6 flex flex-col items-center justify-center space-y-6"
+      >
+        <h2 id="project-title" class="font-bold text-4xl"></h2>
+        <img
+          id="project-image"
+          class="project-image"
+          src=""
+          alt="Project Image"
+        />
+        <p id="project-description"></p>
+        <p>
+          <strong>The system supports:</strong>
+          <span id="project-technologies"></span>
+        </p>
+      </div>
+    </div>
+
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+            <img src="images/logo.jpg" class="h-8 mr-3" alt="Flowbite Logo" />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Voltwise</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-bold text-gray-700 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Home</a>
+            </li>
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Services</a>
+            </li>
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023
+          <a href="https://flowbite.com/" class="hover:underline"
+            >Voltwise Technologies™</a
+          >. All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <script src="project.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+button {
+	font-family: 'Nunito', sans-serif;
+}
+
+header::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		243deg,
+		rgba(2, 0, 36, 0.42) 2%,
+		rgba(56, 56, 179, 0.29) 55%,
+		rgba(0, 212, 255, 0.51) 100%
+	);
+	z-index: 0;
+}
+
+header {
+	background: url('../images/solar-panels.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+header > div {
+	position: relative;
+}
+
+/* Hamburger Menu */
+.hamburger {
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	transition: all 0.25s;
+	position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 2px;
+	background: #fff;
+	transform: rotate(0);
+	transition: all 0.5s;
+}
+
+.hamburger-middle {
+	transform: translateY(7px);
+}
+
+.hamburger-bottom {
+	transform: translateY(14px);
+}
+
+.open {
+	transform: rotate(90deg);
+	transform: translateY(0px);
+}
+
+.open .hamburger-top {
+	transform: rotate(45deg) translateY(6px)
+		translate(6px);
+}
+
+.open .hamburger-middle {
+	display: none;
+}
+
+.open .hamburger-bottom {
+	transform: rotate(-45deg) translateY(6px)
+		translate(-6px);
+}
+
+#menu {
+	z-index: 3;
+}
+
+.card {
+	@apply space-y-3 shadow-xl rounded-lg cursor-pointer;
+}
+
+.card::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: bottom center;
+	background: blue;
+	z-index: -1;
+	transition: transform 0.3s;
+}
+
+.card:hover {
+	background-color: black;
+	color: #f2c819;
+}
+
+.card img {
+	@apply rounded-t-lg;
+}
+
+.card h3 {
+	@apply font-bold text-xl mb-2;
+}
+
+.btn-portfolio {
+	@apply rounded-full py-2 px-5 bg-gray-200 transition-all ease-in-out duration-300;
+}
+
+.active,
+.btn-portfolio:hover {
+	background-color: #f2c819;
+	color: #fff;
+	font-weight: bold;
+}
