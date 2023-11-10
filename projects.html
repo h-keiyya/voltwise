@@ -82,20 +82,20 @@
 
     <div id="project-content">
       <div
-        class="project-details container mx-auto p-6 flex flex-col items-center justify-center space-y-6"
+        class="project-details container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 items-start justify-center space-y-4"
       >
-        <h2 id="project-title" class="font-bold text-4xl"></h2>
-        <img
-          id="project-image"
-          class="project-image"
-          src=""
-          alt="Project Image"
-        />
-        <p id="project-description"></p>
-        <p>
-          <strong>The system supports:</strong>
-          <span id="project-technologies"></span>
-        </p>
+        <div class="flex flex-col p-4 md:space-y-6">
+          <h2 id="project-title" class="font-bold text-4xl md:mt-10"></h2>
+
+          <p id="project-description" class="my-6"></p>
+
+          <ul id="project-supports" class="list-disc list-inside my-4"></ul>
+        </div>
+        <!-- Images -->
+        <div
+          id="project-images-container"
+          class="flex flex-col flex-wrap justify-center space-y-4 w-full"
+        ></div>
       </div>
     </div>
 
